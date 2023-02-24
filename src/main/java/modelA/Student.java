@@ -1,6 +1,8 @@
 package modelA;
 
-public class Student extends Person{
+import java.io.Serializable;
+
+public class Student extends Person implements Serializable {
 
     private int NIA;
 
@@ -17,9 +19,16 @@ public class Student extends Person{
         return NIA;
     }
 
+//    @Override
+//    public int compareTo(Student o) {
+//        if(o.getSurname().compareToIgnoreCase(this.getSurname())!=0)
+//            return getSurname().compareToIgnoreCase(o.getSurname());
+//        e
+//    }
+
     @Override
     public String toString(){
-        return "Student {" + "Name: " + super.getName() + ", " + "Surname: " + super.getSurname() + ", " +"NIA: " + NIA + "}";
+        return "{Name: " + super.getName() + ", " + "Surname: " + super.getSurname() + ", " +"NIA: " + NIA + "}";
     }
 
 }
