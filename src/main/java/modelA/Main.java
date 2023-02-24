@@ -5,6 +5,16 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) throws Exception {
 
+        /*
+        1. Create a couple of students
+        2. Create a queue
+        3. Insert students in the queue
+        4. View the queue
+        5. Remove the last student inserted in the queue
+        6. Visualize the new queue
+        7. Copy the stack into a file
+        */
+
         File f = new File("Test");
         GenericQueue<Person> g1 = new GenericQueue<>();
         Person p1 = new Student("Ivan", "Perez", 165465);
